@@ -12,3 +12,7 @@ $ cd MachoParser
 $ cd build && cmake ..
 $ ./MachoParser
 ```
+
+# Sample output
+
+![Output](output.png)
