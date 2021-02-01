@@ -139,8 +139,6 @@ void dump_segments(FILE *obj_file, uint32_t ncmds)
 			fread(dcmd, sizeof(struct dylib_command), 1, obj_file);
 			printf("\t\tcmdsize = %d\n", dcmd->cmdsize);
 			printf("\t\t%s\n", get_version(dcmd->dylib.current_version));
-
-			printf("\t\t\t\tname: %p\n", (char*)dcmd->dylib.name.ptr);
 		}
 
 		if (lc->cmd == LC_VERSION_MIN_IPHONEOS) {
